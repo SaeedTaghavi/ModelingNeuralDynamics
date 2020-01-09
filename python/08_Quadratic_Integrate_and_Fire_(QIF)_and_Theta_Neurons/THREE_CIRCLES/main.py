@@ -15,15 +15,22 @@ eps=0.15
 
 plt.figure(figsize=(5,5))
 
-plt.scatter(x0,y0,s=1000*eps)
+plt.plot(x,y)
+plt.scatter(x0,y0,s=1000*eps,facecolors='black')
 #plt.fill(x0+eps*x,y0+eps*y)
 y0=-y0
 plt.scatter(x0,y0,s=1000*eps,facecolors='none', edgecolors='r')
 #plt.fill(x0+eps*x,y0+eps*y,'r')
-plt.plot(x,y)
 plt.ylim((-1.5,1.50))
 plt.xlim((-1.5,1.50))
 plt.show()
+
+#inja jadide
+ym1 = np.ma.masked_where(y1 > 0.5, y1)
+
+
+
+
 
 
 exit()
